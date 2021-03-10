@@ -1,0 +1,29 @@
+.add-option__error {
+	text-align: center;
+	font-style: italic;
+	margin: $m-size 0 0 0;
+	padding: 0;
+}
+
+.add-option__form {
+	display: flex;
+	flex-direction: row;
+	padding: $m-size;
+}
+
+.add-option__input {
+	border: none;
+	border-bottom: .3rem solid darken(white, 10%);
+	flex-grow: 1;
+	margin-right: $s-size;
+	padding: $s-size;
+}
+
+@media (max-width: $desktop-breakpoint) {
+	.add-option__form {
+		flex-direction: column;
+	}
+	.add-option__input {
+		margin: 0;
+	}
+}
